@@ -1,0 +1,28 @@
+{
+  "name": "app1",
+  "description": "",
+  "main": "",
+  "authors": [
+    "hoangduy1508 <hoangduy15081995@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "https://github.com/twbs/bootstrap.git#^3.3.7",
+    "jquery-flexdatalist": "https://github.com/sergiodlopes/jquery-flexdatalist.git#^2.2.2",
+    "font-awesome": "https://github.com/FortAwesome/Font-Awesome.git#^4.7.0",
+    "font-icons-trungquan17": "https://github.com/trungquan17/font-icons.git",
+    "AlertifyJS": "https://github.com/MohammadYounes/AlertifyJS.git#^1.11.0",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "photoset-grid": "^1.0.1",
+    "pusher-js": "pusher#^4.2.1"
+
+  }
+}

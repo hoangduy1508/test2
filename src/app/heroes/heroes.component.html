@@ -1,0 +1,26 @@
+<h2>My Heroes</h2>
+<app-hero-search></app-hero-search>
+<div>
+  <label>Hero name: 
+    <input  [(ngModel)]="heroEdit.name"  />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button *ngIf="IsAdd" (click)="add(heroEdit.name);">
+    add
+  </button>
+  <button *ngIf="!IsAdd" (click)="edit(heroEdit);">
+    save
+  </button>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+    <button class="delete" title="delete hero"
+      (click)="delete(hero)">x</button>
+      <button class="edit" title="delete hero"
+      (click)="before_edit(hero)">Edit</button>
+  </li>
+</ul>
